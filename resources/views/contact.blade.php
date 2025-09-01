@@ -5,7 +5,7 @@
 <div class="container" style="margin-top: 50px; margin-bottom:100px;">
     <div class="text-center mb-4">
         <h2 class="fw-bold">Contact Us</h2>
-        <p>Stay connected, stay supported.We’re just a message away.</p>
+        <p>Stay connected, stay supported.We're just a message away.</p>
     </div>
 
     <div class="row">
