@@ -138,6 +138,6 @@ class CartController extends Controller
             Cart::where('user_id', $userId)->delete();
         });
 
-        return redirect()->route('my-order')->with('success', 'Order confirmed successfully!');
+        return redirect()->route('my-order')->with('success', 'Checkout successfully!');
     }
 }
