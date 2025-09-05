@@ -23,7 +23,7 @@ class HomeController extends Controller
         $best_sellers = Product::select('products.*', DB::raw('SUM(order_items.quantity) as total_quantity'))
             ->join('order_items', 'products.id', '=', 'order_items.product_id')
             ->groupBy('products.id')
-            ->having('total_quantity', '>', 1)
+            ->having('total_quantity', '>', 3)
             ->orderByDesc('total_quantity')
             ->get();
 

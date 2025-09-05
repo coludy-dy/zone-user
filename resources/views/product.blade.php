@@ -7,7 +7,8 @@
     {{-- Product Search Section --}}
 <form action="{{ route('product.index') }}" method="GET" class="mb-4">
     @csrf
-    <div class="row g-3 align-items-end">
+    <div class="row g-4 align-items-end mb-4">
+        <div class="col-md-1"></div>
         <!-- Brand -->
         <div class="col-md-4">
             <label for="brand_id" class="form-label fw-bold">All Brand</label>
@@ -28,12 +29,12 @@
         </div>
 
         <!-- Buttons -->
-        <div class="col-md-4">
+        <div class="col-md-3">
             <button type="submit" class="btn btn-primary px-4">
-                <i class="fa-solid fa-magnifying-glass"></i> Search
+                <i class="fa-solid fa-magnifying-glass"></i>
             </button>
             <a href="{{ route('product.index') }}" class="btn btn-warning px-4">
-                <i class="fa-solid fa-rotate-left"></i> Clear
+                <i class="fa-solid fa-rotate-left"></i>
             </a>
         </div>
     </div>
@@ -44,7 +45,7 @@
     @if ($products->count() == 0)
         <p class="text-center">No products found.</p>
     @else
-        <div class="row">
+        <div class="row mt-4">
             @foreach ($products as $product)
                 <div class="col-md-3 d-flex mb-4">
                     <div class="card w-100 h-100">
